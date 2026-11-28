@@ -149,7 +149,8 @@
           <h2><span>2.</span> Quién puede participar</h2>
           <p>La participación es gratuita y está abierta tanto al alumnado de Victoria FP como a personas ajenas al centro. Cada persona podrá presentar <strong>una única fotografía de un único jersey navideño</strong>.</p>
           <p>En el formulario de inscripción será obligatorio indicar <strong>el nombre y apellidos, el correo electrónico y el número de teléfono</strong>.</p>
-          <p>Si la persona participante es menor de edad, su padre, madre o tutor legal deberá cumplimentar la autorización disponible en la web del concurso antes de que cierre el plazo de inscripción.</p>
+          <p>Solo pueden participar <strong>personas mayores de 18 años</strong>. Al marcar la casilla «Soy mayor de 18 años» al crear la cuenta, la persona participante declara que tiene 18 años o más, y la organización dará por cierta esa declaración.</p>
+          <p>Si se comprueba que una persona menor de edad ha marcado esa casilla, se le retirará la participación en el concurso, junto con su candidatura, sus votos y, en su caso, el premio.</p>
         </section>
 
         <section id="b3">
@@ -159,13 +160,14 @@
             <li>La fotografía debe centrarse en el jersey y tener suficiente nitidez y luz para que se aprecie su diseño. No podrá verse el rostro de ninguna persona, aunque aparezca de fondo o en un reflejo.</li>
             <li>La fotografía debe ser propia y original y mostrar el jersey real. Se excluirán las imágenes copiadas, descargadas de Internet, generadas o modificadas mediante inteligencia artificial. Se permiten ajustes básicos de luz y encuadre que mantengan el aspecto real de la prenda.</li>
             <li>Se excluirán las fotografías con contenido ofensivo, discriminatorio o inapropiado, así como las que expongan datos personales de terceros o vulneren sus derechos.</li>
+            <li>Victoria FP se reserva el derecho a retirar cualquier fotografía en la que, a juicio de la organización, aparezca o pueda aparecer una persona menor de edad.</li>
             <li>Si dos o más participantes presentan jerséis con el mismo diseño, ninguno de esos jerséis podrá ganar en ninguna categoría. El jurado comprobará si el diseño final es el mismo. Si dos personas parten del mismo modelo y lo personalizan de forma claramente distinta, ambas podrán optar a premio.</li>
           </ul>
         </section>
 
         <section id="b4">
           <h2><span>4.</span> Cómo inscribirse</h2>
-          <p>Para participar, hay que rellenar el formulario, subir la fotografía y aceptar estas bases en <strong>elhiloquenosune.victoriafp.com</strong>. En el caso de los menores de edad, su representante legal deberá completar la autorización en esa misma web.</p>
+          <p>Para participar, hay que rellenar el formulario, subir la fotografía y aceptar estas bases en <strong>elhiloquenosune.victoriafp.com</strong>.</p>
           <p>También será obligatorio seguir las cuentas oficiales de Victoria FP en <strong>Instagram (@victoriafp)</strong> y <strong>TikTok (@victoria_fp_institute)</strong>. La organización comprobará el seguimiento y podrá solicitar los nombres de usuario para verificarlo. El incumplimiento de este requisito supondrá la descalificación.</p>
         </section>
 
@@ -228,7 +230,7 @@
         <section id="b10">
           <h2><span>10.</span> Fotografías y protección de datos</h2>
           <p>Cada participante conserva la autoría de su fotografía. Al inscribirse, autoriza a Victoria FP a mostrarla en la web del concurso para su valoración y votación.</p>
-          <p>La publicación posterior de fotografías en redes sociales, la identificación pública de las personas ganadoras y la difusión de imágenes tomadas durante el acto se ajustarán a las autorizaciones recabadas para cada finalidad. Cuando corresponda, deberá intervenir el representante legal del menor.</p>
+          <p>La publicación posterior de fotografías en redes sociales, la identificación pública de las personas ganadoras y la difusión de imágenes tomadas durante el acto se ajustarán a las autorizaciones recabadas para cada finalidad.</p>
           <p>Los datos personales se utilizarán para gestionar la inscripción, comprobar los requisitos, contactar con las personas seleccionadas y gestionar la entrega de premios. <strong>El correo electrónico y el número de teléfono no se harán públicos.</strong></p>
           <p>Antes de enviar el formulario, las personas participantes podrán consultar el <a class="link" href="privacidad.html" th:href="@{/privacidad}">aviso de privacidad</a>. Este indicará quién es el responsable del tratamiento, sus datos de contacto, las finalidades y bases jurídicas del tratamiento, los destinatarios de los datos, el plazo o criterio de conservación y la forma de ejercer los derechos de protección de datos.</p>
         </section>
@@ -357,8 +359,8 @@
             </div>
           </div>
           <label class="check">
-            <input type="checkbox" name="mayorEdad" value="true">
-            <span>Soy mayor de edad</span>
+            <input type="checkbox" name="mayorEdad" value="true" required>
+            <span>Soy mayor de 18 años</span>
           </label>
           <label class="check">
             <input type="checkbox" name="aceptaBases" value="true" required>

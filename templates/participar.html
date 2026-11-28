@@ -110,7 +110,7 @@
         <div class="page-hero__inner">
           <span class="eyebrow reveal"><svg class="icon"><use href="#i-star"/></svg>Cómo participar</span>
           <h1 class="display reveal" style="--rd:.08s">El próximo hilo <em>puede ser el tuyo.</em></h1>
-          <p class="lead reveal" style="--rd:.16s">Abierto al alumnado de Victoria FP y a cualquier persona de fuera del centro. Participar es gratis: solo necesitas un jersey navideño, una buena foto y ganas de pasarlo bien.</p>
+          <p class="lead reveal" style="--rd:.16s">Abierto al alumnado de Victoria FP y a cualquier persona de fuera del centro, siempre que sea mayor de 18 años. Participar es gratis: solo necesitas un jersey navideño, una buena foto y ganas de pasarlo bien.</p>
         </div>
         <img class="page-hero__tree" src="../static/img/logo-icono.png" th:src="@{/img/logo-icono.png}" alt="" width="700" height="352" aria-hidden="true">
       </div>
@@ -123,11 +123,13 @@
           <p>Repasa estas normas para que tu candidatura entre sin problemas.</p>
           <ul class="checklist">
             <li><span class="mark"><svg class="icon"><use href="#i-check"/></svg></span><span>Una única foto de un único jersey por persona.</span></li>
+            <li><span class="mark"><svg class="icon"><use href="#i-check"/></svg></span><span>Solo para mayores de 18 años. Al marcar la casilla de mayoría de edad declaras que los tienes.</span></li>
             <li><span class="mark"><svg class="icon"><use href="#i-check"/></svg></span><span>Foto propia, nítida y con buena luz, centrada en el jersey real.</span></li>
             <li><span class="mark"><svg class="icon"><use href="#i-check"/></svg></span><span>El jersey puede ser comprado, hecho desde cero o personalizado con adornos y complementos.</span></li>
             <li><span class="mark"><svg class="icon"><use href="#i-check"/></svg></span><span>Puedes hacer ajustes básicos de luz y encuadre.</span></li>
             <li><span class="mark mark--no"><svg class="icon"><use href="#i-x"/></svg></span><span>No puede verse ninguna cara, ni de fondo ni en un reflejo.</span></li>
             <li><span class="mark mark--no"><svg class="icon"><use href="#i-x"/></svg></span><span>Nada de datos personales, terceras personas sin permiso ni contenido ofensivo.</span></li>
+            <li><span class="mark mark--no"><svg class="icon"><use href="#i-x"/></svg></span><span>Si en una foto parece aparecer un menor, la organización podrá retirarla.</span></li>
             <li><span class="mark mark--no"><svg class="icon"><use href="#i-x"/></svg></span><span>Nada de imágenes de Internet ni fotos generadas o modificadas con IA.</span></li>
           </ul>
         </article>
@@ -335,8 +337,8 @@
             </div>
           </div>
           <label class="check">
-            <input type="checkbox" name="mayorEdad" value="true">
-            <span>Soy mayor de edad</span>
+            <input type="checkbox" name="mayorEdad" value="true" required>
+            <span>Soy mayor de 18 años</span>
           </label>
           <label class="check">
             <input type="checkbox" name="aceptaBases" value="true" required>
