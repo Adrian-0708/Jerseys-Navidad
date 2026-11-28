@@ -37,6 +37,8 @@ Todas las fechas son de diciembre de 2026, en horario peninsular español.
 
 Para **presentar un jersey** o **votar** hay que tener cuenta. El resto de la web se puede ver sin sesión. Las bases completas están en `templates/bases.html` y en `static/docs/bases-concurso.pdf`.
 
+**Solo mayores de 18 años.** Al crear la cuenta hay que marcar «Soy mayor de 18 años». Marcarla equivale a declarar que se tienen y la organización lo da por cierto; si se descubre que un menor la ha marcado, se le retira la participación. Además, la organización puede retirar cualquier foto en la que, a su juicio, aparezca un menor.
+
 ---
 
 ## Páginas
@@ -139,7 +141,7 @@ Esto es lo que las plantillas esperan del backend.
 ### Campos de los formularios
 
 - **Login:** `username` (correo), `password`, `remember-me`
-- **Registro:** `nombre`, `email`, `password`, `password2`, `mayorEdad`, `aceptaBases`
+- **Registro:** `nombre`, `email`, `password`, `password2`, `mayorEdad`, `aceptaBases`. `mayorEdad` es obligatorio: el backend debe rechazar el alta si no llega a `true`
 - **Candidatura:** `fotoDelantera`, `fotoTrasera` (JPG, PNG o WebP), `aceptaBases`, `confirmaRequisitos`. Los datos del participante salen de su cuenta.
 
 ### Datos del modelo
@@ -176,6 +178,7 @@ Esto es lo que las plantillas esperan del backend.
 
 - [ ] Backend en Spring Boot: entidades `Usuario`, `Jersey` y `Voto`, controladores, seguridad y almacenamiento de imágenes
 - [ ] Publicar el aviso de privacidad definitivo (`privacidad.html`)
+- [ ] Herramienta para que los administradores retiren fotos y candidaturas
 - [ ] Controlar que haya un único voto por persona
 - [ ] Añadir el flyer a la portada
 - [ ] Decidir si el registro pide teléfono (las bases lo exigen para inscribirse)
